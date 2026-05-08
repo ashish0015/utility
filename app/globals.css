@@ -1,0 +1,100 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at top, #1f2937 0%, #0b1020 45%, #060912 100%);
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+}
+
+.hero p {
+  margin: 0.75rem 0 0;
+  color: #9ca3af;
+}
+
+.searchSection {
+  margin: 0 auto 1.75rem;
+  max-width: 620px;
+}
+
+.searchSection input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #374151;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 1rem;
+}
+
+.searchSection input:focus {
+  outline: 2px solid #6366f1;
+  border-color: transparent;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid #374151;
+  border-radius: 0.9rem;
+  padding: 1rem;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0.65rem 0 0.9rem;
+  color: #d1d5db;
+  line-height: 1.45;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  color: #c7d2fe;
+  background: rgba(67, 56, 202, 0.2);
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #9ca3af;
+}
